@@ -84,9 +84,9 @@ button, input[type="submit"], input[type="reset"] {
  
   animation-play-state: running;
   color:#1F48ED;
-  
-
-  
+  line-height: inherit;
+  font-size:inherit;
+  letter-spacing: inherit;
 
   
 }
