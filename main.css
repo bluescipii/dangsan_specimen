@@ -93,6 +93,7 @@ button, input[type="submit"], input[type="reset"] {
   overflow:visible;
   box-sizing: border-box;
   display: inline; 
+  cursor: pointer;
 
  
   
