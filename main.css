@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'Dangsan';
+  src: url('/dangsan.ttf' ) format("truetype-variations");
+  font-weight: 100 200;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+
+#alphabetvalue{
+  font-size: 6em;
+  font-family: 'Ultra', serif;
+  position: absolute;
+  bottom:0px;
+  
+}
+
+
+body{
+    padding:0px;
+    margin:0px;
+    top:0px;
+   
+}
+
+#example{
+    position: fixed;
+    font-family: 'Dangsan';
+    font-weight: 100;
+    color: black;
+    font-size: 3em;
+    line-height: 0.60em;
+    top:-3px;
+    letter-spacing: -1px;
+    text-align: justify;
+    font-variation-settings: 'wght' 200;
+    animation:  breathe 4000ms infinite forwards;
+    animation-delay: 2000ms;
+    animation-play-state: running;
+    z-index: 0;
+    cursor:default;
+
+
+    
+}
+
+
+@keyframes breathe {
+	50% {
+		font-variation-settings: 'wght' 100;
+	}
+
+	100% {
+		font-variation-settings: 'wght' 200;
+	}
+}
+
+#background {
+  position: absolute;
+  background-color: white;
+  z-index: -1;
+  width: 100vw;
+  height: 1000vh;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+::-webkit-scrollbar {
+
+  display:none;
+  
+  } 
+
+#bt {
+ 
+  animation-play-state: running;
+  color:#1F48ED;
+  
+
+  
+
+  
+}
+
+
+@keyframes breathe {
+  50% {
+    font-variation-settings: 'wght' 100;
+  }
+
+  90% {
+    font-variation-settings: 'wght' 200;
+  }
+}
+
+#leftsquare{
+  position: fixed;
+  top: 15vh;
+  right: 50vw;
+  width: 70vh;
+  height: 70vh;
+  background-color: white;
+  z-index: 3;
+  overflow: hidden;
+  cursor:default;
+
+}
+
+#showroom{
+  position: absolute;
+  bottom:0px;
+  color:black;
+  font-size: 117vh;
+  font-family: 'Dangsan';
+}
+
+#rightsquare{
+  position: fixed;
+
+  display : flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content : space-between;
+
+  
+
+  left:50vw;
+  top: 15vh;
+  width: 70vh;
+  height: 70vh;
+  margin: 0 -1px;;
+}
+
+.nav{
+  color:black;
+  background-color: white;
+  font-weight: 200;
+
+  font-size: 19.5vh;
+  font-family: 'Dangsan';
+  overflow:scroll;
+  
+
+  width:11.666666vh;
+  height:11.666666vh;
+  z-index:6;
+
+
+  
+  z-index: 0;
+
+}
+
+
+
+
+
+#close{
+  color:white;
+  background-color:black;
+  font-size: 19.5vh;
+  font-family: 'Dangsan';
+  overflow:scroll;
+  
+  font-weight: 100;
+  padding:0px;
+  margin:0px;
+  z-index:5;
+  
+}
+
+#info{
+ color:white;
+ background-color: black;
+ font-weight: 100;
+}
+
+
+
+
+#showroom{
+
+  font-variation-settings: 'wght' 200;
+  animation:  breathe 4000ms infinite forwards;
+  animation-delay: 2000ms;
+  animation-play-state: running;
+}
+
+
+#infodiv{
+  position:fixed;
+  background-color: black;
+  color:white;
+  z-index:100;
+  font-size: 3.5em;
+  font-family:'Ultra', serif;
+  overflow:scroll;
+  display:none;
+}
