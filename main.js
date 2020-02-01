@@ -74,7 +74,7 @@ window.onload = function(){
 
     
     $("#info").hover(function(){
-      document.getElementById('info').style.color = "#1FED3B";
+      document.getElementById('info').style.color = "black";
       document.getElementById('info').style.backgroundColor = "white";
     });
 
@@ -91,7 +91,7 @@ window.onload = function(){
     });
 
     $("#close").hover(function(){
-      document.getElementById('close').style.color = "#1FED3B";
+      document.getElementById('close').style.color = "black";
       document.getElementById('close').style.backgroundColor = "white";
     });
 
