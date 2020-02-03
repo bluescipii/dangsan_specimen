@@ -101,11 +101,15 @@ window.onload = function(){
     });
 
     $("#close").click(function(){
+  
+      document.getElementById('alphabetvalue').innerHTML = "A";
+      document.getElementById('showroom').innerHTML = "A";
+      document.getElementById('alphabetvalue').style.color = "black";
+      document.getElementById('alphabetvalue').style.bottom = ( $("#leftsquare").height()/2 ) - $("#alphabetvalue").height()/2-$("#leftsquare").height()/3 +"px";
+      document.getElementById('alphabetvalue').style.left = ( $("#leftsquare").width()/2 ) - $("#alphabetvalue").width() / 2+"px";
       $("#infodiv").hide();
       $("#rightsquare").hide();
       $("#leftsquare").hide();
-      document.getElementById('alphabetvalue').innerHTML = "A"
-      document.getElementById('showroom').innerHTML = "A"
      
     });   
 
@@ -746,7 +750,7 @@ window.onload = function(){
     $("#Question").click(function(){
       $("#infodiv").hide();
       document.getElementById('alphabetvalue').innerHTML = "?"
-      document.getElementById('showroom').innerHTML = "!"
+      document.getElementById('showroom').innerHTML = "?"
       document.getElementById('alphabetvalue').style.color = "white"
       document.getElementById('alphabetvalue').style.bottom = ( $("#leftsquare").height()/2 ) - $("#alphabetvalue").height()/2-$("#leftsquare").height()/3 +"px";
       document.getElementById('alphabetvalue').style.left = ( $("#leftsquare").width()/2 ) - $("#alphabetvalue").width() / 2+"px";
@@ -769,7 +773,7 @@ window.onload = function(){
     $("#puc").click(function(){
       $("#infodiv").hide();
       document.getElementById('alphabetvalue').innerHTML = "!"
-      document.getElementById('showroom').innerHTML = "?"
+      document.getElementById('showroom').innerHTML = "!"
       document.getElementById('alphabetvalue').style.color = "black"
       document.getElementById('alphabetvalue').style.bottom = ( $("#leftsquare").height()/2 ) - $("#alphabetvalue").height()/2-$("#leftsquare").height()/3 +"px";
       document.getElementById('alphabetvalue').style.left = ( $("#leftsquare").width()/2 ) - $("#alphabetvalue").width() / 2+"px";
@@ -787,6 +791,7 @@ window.onload = function(){
 
     $("#bt").hover(function(){
         document.getElementById('example').style.animationPlayState="paused";
+
     
       
     });
@@ -844,7 +849,9 @@ window.onload = function(){
     document.getElementById('leftsquare').style.display = "none";
     document.getElementById('infodiv').style.display = "none";
 
-    
+ 
+    $('#loading').hide();
+ 
  
 
 }
